@@ -186,6 +186,21 @@
     border-radius:14px;padding:16px 20px}
   .crit-note b{color:#9CC7FF}
 
+  /* ---------- usage callout ---------- */
+  .notake{max-width:880px;margin:28px auto 0;display:flex;gap:20px;align-items:flex-start;
+    background:linear-gradient(150deg,rgba(34,197,94,.13),rgba(46,134,255,.05));
+    border:1px solid rgba(34,197,94,.34);border-radius:20px;padding:26px 24px}
+  .notake .nt-ico{width:50px;height:50px;flex-shrink:0;border-radius:14px;display:grid;place-items:center;
+    background:rgba(34,197,94,.18);border:1px solid rgba(34,197,94,.42);color:#5BE38A}
+  .notake .nt-ico svg{width:25px;height:25px}
+  .notake h3{font-size:1.1rem;font-weight:800;margin-bottom:9px}
+  .notake p{color:var(--muted);font-size:.93rem}
+  .notake p b{color:#DCE7F7}
+  .notake ul{list-style:none;display:grid;gap:9px;margin-top:14px}
+  .notake li{display:flex;gap:10px;align-items:flex-start;font-size:.91rem;color:#CFDCEE}
+  .notake li svg{width:18px;height:18px;flex-shrink:0;color:var(--ok);margin-top:3px}
+  @media (max-width:640px){ .notake{flex-direction:column;gap:15px;padding:22px 18px} }
+
   /* ---------- pricing ---------- */
   .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:820px;margin:0 auto}
   .price{position:relative;background:var(--card);border:1px solid var(--border);
@@ -337,6 +352,7 @@
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#kriteria">Kriteria</a>
+      <a href="#penggunaan">Penggunaan</a>
       <a href="#keuntungan">Keuntungan</a>
       <a href="#fee">Fee Sewa</a>
       <a href="#cara">Cara Kerja</a>
@@ -372,6 +388,7 @@
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Dibayar tiap minggu</span>
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Bonus Rp80.000 akun unblocked</span>
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Proses cukup via WhatsApp</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sistem sewa, bukan take alih</span>
         </div>
       </div>
 
@@ -438,6 +455,48 @@
         </div>
       </div>
       <p class="crit-note reveal">Sudah memenuhi kriteria? <b>Langsung chat admin</b> buat proses selanjutnya. Belum memenuhi tapi merasa akun kamu tetap cocok? Tetap chat kami — siapa tahu masih bisa dibantu.</p>
+    </div>
+  </section>
+
+  <!-- ================= PENGGUNAAN ================= -->
+  <section class="sec" id="penggunaan">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Penggunaan Akun</span>
+        <h2>Akun kamu dipakai untuk apa?</h2>
+        <p>Akun LinkedIn yang kamu sewakan kami gunakan khusus untuk keperluan <b>marketing dan promosi</b> &mdash; bukan untuk hal-hal di luar itu.</p>
+      </div>
+      <div class="grid-3">
+        <div class="feature reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+          <h3>Promosi Produk &amp; Jasa</h3>
+          <p>Memperkenalkan produk atau jasa ke audiens LinkedIn yang relevan dan tepat sasaran.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
+          <h3>Membangun Branding</h3>
+          <p>Membangun kredibilitas dan awareness brand di kalangan profesional.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></div>
+          <h3>Menjangkau Calon Pelanggan</h3>
+          <p>Menjangkau target market dan calon pelanggan secara lebih luas lewat LinkedIn.</p>
+        </div>
+      </div>
+
+      <div class="notake reveal">
+        <div class="nt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div>
+          <h3>Ini sistem SEWA &mdash; bukan ambil alih akun</h3>
+          <p>Kami hanya menyewa <b>hak pakai</b> akun kamu untuk jangka waktu tertentu. Akun tetap 100% milik kamu, dan kami <b>bukan</b> mengambil alih kepemilikannya.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kepemilikan akun tetap 100% milik kamu</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kami tidak mengambil, memindahkan, atau mengubah kepemilikan akun</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Akses hanya berlaku selama masa sewa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Setelah masa sewa berakhir, akun kembali sepenuhnya ke kamu</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -623,6 +682,14 @@
           <summary>Bagaimana cara mulai menyewakan akun saya? <span class="plus"></span></summary>
           <div class="a">Gampang. Klik tombol WhatsApp di halaman ini, kirim info akun kamu, lalu admin akan memverifikasi apakah akun memenuhi kriteria. Kalau disetujui, prosesnya langsung jalan.</div>
         </details>
+        <details class="q reveal">
+          <summary>Akun saya dipakai untuk apa selama disewakan? <span class="plus"></span></summary>
+          <div class="a">Akun kamu digunakan khusus untuk keperluan marketing dan promosi, seperti memperkenalkan produk/jasa dan membangun branding. Bukan untuk keperluan di luar itu.</div>
+        </details>
+        <details class="q reveal">
+          <summary>Apakah akun saya akan diambil alih (take over)? <span class="plus"></span></summary>
+          <div class="a">Tidak. Ini murni sistem sewa, bukan take over akun. Kepemilikan akun tetap 100% milik kamu &mdash; kami hanya menyewa hak pakainya selama periode sewa, dan setelah masa sewa berakhir akun kembali sepenuhnya ke kamu.</div>
+        </details>
       </div>
     </div>
   </section>
@@ -659,6 +726,7 @@
         <div class="foot-col">
           <h4>Navigasi</h4>
           <a href="#kriteria">Kriteria</a>
+          <a href="#penggunaan">Penggunaan</a>
           <a href="#keuntungan">Keuntungan</a>
           <a href="#fee">Fee Sewa</a>
           <a href="#cara">Cara Kerja</a>
